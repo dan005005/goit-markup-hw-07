@@ -1,0 +1,31 @@
+.benefits {
+    display: flex;
+    gap: 30px;
+}
+
+.benefits__item {
+    width: calc((100% - 90px)/4);
+}
+
+.benefits__title {
+    @include font(14px, var(--bold-font), 16.41px);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-font-color);
+    margin-bottom: 10px;
+}
+
+.benefits__text {
+    @include font(14px, var(--normal-font), 24px);
+    letter-spacing: 0.03em;
+    color: var(--secondary-font-color);
+}
+
+.benefits__box {
+    background-color: var(--light-background-colol);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    @extend %align;
+}
